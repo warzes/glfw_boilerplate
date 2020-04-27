@@ -39,6 +39,7 @@ project "Project"
 		"src/**.c",
 		"src/**.cpp",
 		"src/**.h",
+		"src/**.lib",
 	}
 
     filter "system:linux"

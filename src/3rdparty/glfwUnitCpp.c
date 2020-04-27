@@ -2,23 +2,23 @@
 //http://www.glfw.org/docs/latest/compile.html#compile_manual
 
 #if defined(_WIN32)
-#define _GLFW_WIN32
+#	define _GLFW_WIN32
 #endif
 #if defined(__linux__)
-#if !defined(_GLFW_WAYLAND)     // Required for Wayland windowing
-#define _GLFW_X11
-#endif
+#	if !defined(_GLFW_WAYLAND)     // Required for Wayland windowing
+#		define _GLFW_X11
+#	endif
 #endif
 #if defined(__FreeBSD__) || defined(__OpenBSD__) || defined(__NetBSD__) || defined(__DragonFly__)
-#define _GLFW_X11
+#	define _GLFW_X11
 #endif
 #if defined(__APPLE__)
-#define _GLFW_COCOA
-#define _GLFW_USE_MENUBAR       // To create and populate the menu bar when the first window is created
-#define _GLFW_USE_RETINA        // To have windows use the full resolution of Retina displays
+#	define _GLFW_COCOA
+#	define _GLFW_USE_MENUBAR       // To create and populate the menu bar when the first window is created
+#	define _GLFW_USE_RETINA        // To have windows use the full resolution of Retina displays
 #endif
 #if defined(__TINYC__)
-#define _WIN32_WINNT_WINXP      0x0501
+#	define _WIN32_WINNT_WINXP      0x0501
 #endif
 
 // NOTE: _GLFW_MIR experimental platform not supported at this moment

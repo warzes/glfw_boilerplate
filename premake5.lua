@@ -36,6 +36,7 @@ project "Project"
     
 	files
 	{
+		"src/**.c",
 		"src/**.cpp",
 		"src/**.h",
 	}

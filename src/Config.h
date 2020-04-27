@@ -1,3 +1,3 @@
 #pragma once
 
-#define SUPPORT_OPENGL 1
+#define SUPPORT_OPENGL 0

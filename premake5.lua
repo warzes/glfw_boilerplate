@@ -28,10 +28,9 @@ project "Project"
 	
 	includedirs
 	{
+		"libs/",
 		"libs/glad/include/",
-		"libs/glad/src/",
 		"libs/glfw/include/",
-		"libs/glfw/src/",
 		"libs/glm/",	
 	}
     
